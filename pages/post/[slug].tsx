@@ -3,7 +3,6 @@ import { client, urlFor } from "../../sanity";
 import PortableText from "react-portable-text";
 import { useForm } from "react-hook-form";
 
-import Header from "../../components/Header";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { Post } from "../../typings";
 
