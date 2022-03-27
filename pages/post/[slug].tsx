@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Fragment, useState } from "react";
 import { client, urlFor } from "../../sanity";
 import PortableText from "react-portable-text";
@@ -48,11 +47,6 @@ export default function Slug({ post }: Props) {
 
   return (
     <Fragment>
-      {/* Head Section. */}
-      <Head>
-        <title>Snippets | Code-Blog: {post.title && post.title}</title>
-      </Head>
-
       {/* Article Body Component. */}
       <Container>
         <Row className="p-3">
