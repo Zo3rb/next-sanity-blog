@@ -26,44 +26,6 @@ export default function Header() {
                   About
                 </a>
               </Link>
-              <Link href="/contact">
-                <a
-                  className={`nav-link ${
-                    currentRouter === "/contact" && "active"
-                  }`}
-                >
-                  Contact
-                </a>
-              </Link>
-              <Link href="/follow">
-                <a
-                  className={`nav-link rounded-pill px-4 bg-success ${
-                    currentRouter === "/follow" && "active"
-                  }`}
-                >
-                  Follow
-                </a>
-              </Link>
-            </Nav>
-            <Nav>
-              <Link href="/about">
-                <a
-                  className={`nav-link ${
-                    currentRouter === "/sign-in" && "active"
-                  }`}
-                >
-                  Sign In
-                </a>
-              </Link>
-              <Link href="/contact">
-                <a
-                  className={`nav-link ${
-                    currentRouter === "/get-started" && "active"
-                  }`}
-                >
-                  Get Started
-                </a>
-              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

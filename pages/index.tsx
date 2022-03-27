@@ -2,7 +2,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import { client, urlFor } from "../sanity";
-import Header from "../components/Header";
 import Jumbotron from "../components/Jumbotron";
 import { Post } from "../typings";
 
@@ -25,8 +24,6 @@ const Home = ({ posts }: Props) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
 
       <Jumbotron />
 
@@ -83,6 +80,7 @@ export async function getStaticProps() {
     props: {
       posts,
     },
+    revalidate: 1500,
   };
 }
 

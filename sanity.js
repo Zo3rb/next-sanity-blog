@@ -3,7 +3,6 @@ import {
     createPreviewSubscriptionHook,
 } from "next-sanity";
 import createImageUrlBuilder from '@sanity/image-url'
-import ReactTooltip from "react-tooltip";
 
 
 const config = {
@@ -23,6 +22,7 @@ const config = {
      * Authenticated request (like preview) will always bypass the CDN
      **/
     useCdn: process.env.NODE_ENV === "production",
+    token: process.env.NEXT_PUBLIC_SANITY_TOKEN
 };
 
 if (!config.projectId) {
