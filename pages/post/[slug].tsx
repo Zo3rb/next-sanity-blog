@@ -50,7 +50,7 @@ export default function Slug({ post }: Props) {
     <Fragment>
       {/* Head Section. */}
       <Head>
-        <title>Snippets | Code-Blog: {post.title}</title>
+        <title>Snippets | Code-Blog: {post.title && post.title}</title>
       </Head>
 
       {/* Article Body Component. */}
