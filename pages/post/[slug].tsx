@@ -44,6 +44,10 @@ export default function Slug({ post }: Props) {
     }
   };
 
+  if (!post) {
+    return <p>Loading ...</p>;
+  }
+
   return (
     <Fragment>
       {/* Article Body Component. */}
@@ -57,11 +61,7 @@ export default function Slug({ post }: Props) {
 
             <hr />
 
-            <img
-              src={urlFor(post.mainImage).url()!}
-              alt={post.title}
-              className="img-fluid"
-            />
+            <img src={urlFor(post.mainImage).url()!} className="img-fluid" />
 
             <div className="my-3 d-flex justify-content-between align-items-center">
               <h4>
